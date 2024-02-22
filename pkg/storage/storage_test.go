@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-var connStr = "postgres://collapse:syncmaster12@192.168.1.102:3050/task_manager"
+var connStr = "postgres://test:test@192.168.1.102:3050/task_manager"
 
 func newConnet() *pgxpool.Pool {
 	db, err := pgxpool.Connect(context.Background(), connStr)
